@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./index.scss" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./_about.scss" />
+    <title>Sobre Mim</title>
   </head>
   <body>
+    <!-- Heder -->
+
     <header>
       <nav class="navbar flex space-between">
         <div class="container flex space-between">
@@ -48,48 +44,22 @@
             </svg>
           </button>
           <div class="navbar-links">
-            <a class="navbar-links-link" href="">Início</a>
+            <a class="navbar-links-link" href="./index.html">Início</a>
             <a class="navbar-links-link" href="./about.html">Sobre mim</a>
             <a class="navbar-links-link" href="">Contato</a>
           </div>
         </div>
       </nav>
-      <div class="my-info flex">
-        <h1 class="my-info-title">
-          Sou <span class="my-info-title-name">Mariane Alves</span>
-        </h1>
-        <div class="my-info-buttons flex">
-          <button class="button button__solid">Entrar em contato</button>
-          <button class="button button__outlined">
-            <svg
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 15C-2.41411e-08 14.4477 0.447715 14 1 14H13C13.5523 14 14 14.4477 14 15C14 15.5523 13.5523 16 13 16H1C0.447715 16 2.41411e-08 15.5523 0 15ZM3.29289 7.29289C3.68342 6.90237 4.31658 6.90237 4.70711 7.29289L6 8.58579L6 1C6 0.447716 6.44771 2.41411e-08 7 0C7.55228 -2.41411e-08 8 0.447715 8 1L8 8.58579L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289C11.0976 7.68342 11.0976 8.31658 10.7071 8.70711L7.70711 11.7071C7.51957 11.8946 7.26522 12 7 12C6.73478 12 6.48043 11.8946 6.29289 11.7071L3.29289 8.70711C2.90237 8.31658 2.90237 7.68342 3.29289 7.29289Z"
-                fill="white"
-              />
-            </svg>
-            <span class="button-text button-text__mr-left">Baixar CV</span>
-          </button>
-        </div>
-      </div>
     </header>
+
+    <!-- About me -->
+
     <section class="about">
       <div class="about-card flex">
-        <img
-          class="about-card-img"
-          style="filter: grayscale(1)"
-          src="./images/Rodrigo.jpg"
-        />
+        <img class="about-card-img" style="filter: grayscale(1);" src="./images/Rodrigo.jpg" />
 
         <div class="about-card-content">
-          <h2 class="about-card-title">Sobre mim</h2>
+          <h2 class="about-card-title">Rodrigo Fernandes da Costa</h2>
           <p class="about-card-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
@@ -100,32 +70,140 @@
             rutrum mi, vel pretium arcu aliquam in. Cras et tellus consectetur,
             suscipit augue in, mattis risus. Aliquam cursus arcu eu efficitur
             congue. Nullam turpis turpis, porttitor eu odi.
+            
+            <p><a href="mailto:rfcosta85@gmail.com">rfcosta85@gmail.com</a></p>
           </p>
-          <button class="button button__outlined">
-            <span class="button-text button-text__mr-right"
-              ><a href="./about.html" target="_blank" rel="noopener noreferrer"
-                >Mais sobre mim</a
-              ></span
-            >
-            <svg
-              width="12"
-              height="10"
-              viewBox="0 0 12 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.16667 0.916626L11.25 4.99996M11.25 4.99996L7.16667 9.08329M11.25 4.99996L0.75 4.99996"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
+          
         </div>
       </div>
     </section>
+
+    <!-- My Skills -->
+
+    <div class="skills">
+
+      <div class="skills__container">
+
+        <div class="skills__responsive">
+
+          <div class="skills__responsive--icons">
+            <img src="./images/mobile.svg" alt="Mobile Icon">
+          </div>        
+          
+          <div class="skills__responsive--title">
+            <p>Responsive design</p>
+          </div>
+
+          <div class="skill__reponsive--info">
+
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi nulla, dolor ut illo ratione vero voluptas dolores quibusdam doloribus in omnis ipsam
+               reprehenderit minus adipisci quis quidem rem beatae sed.
+
+            </p>
+
+          </div>
+            
+        </div>
+
+        <div class="skills__html">
+
+          <div class="skills__html--icons">
+            <img src="./images/html.svg" alt="Html Icon">
+          </div>  
+
+          <div class="skills__html--title">
+            <p class="skills__html--paragraph">HTML,CSS e JS</p>
+          </div>
+
+          <div class="skills__html--info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloremque cupiditate dolorum tenetur, quasi quisquam incidunt maxime doloribus similique earum 
+              officiis nesciunt atque perferendis laboriosam voluptates magni reprehenderit mollitia at.
+            </p>
+          </div>
+            
+        </div>
+
+        <div class="skills__cooworking">
+          
+          <div class="skills__cooworking--icons">
+            <img src="./images/coowrking.svg" alt="coowrking Icon">
+          </div>
+
+          <div class="skills__cooworking--title">
+            <p class="skills__cooworking--paragraph">Cooworking</p>
+          </div>
+
+          <div class="skills__coowrking--info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, id perspiciatis. Sunt rerum earum, ducimus cum minima ratione modi nihil, blanditiis ad ipsum 
+              maxime libero quia voluptate, commodi impedit. Fugiat?
+            </p>
+          </div>
+            
+        </div>
+
+        <div class="skills__comunication">
+
+          <div class="skills__comunication--icons">
+            <img src="./images/comunication.svg" alt="Comunication Icon">
+          </div>  
+
+          <div class="skills__comunication--title">
+            <p class="skills__comunication--paragraph">Comunicação</p>
+          </div>
+
+          <div class="skills__comunication--information">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nisi culpa eum accusamus? Laboriosam, possimus quibusdam, dolor adipisci similique dignissimos 
+              molestiae odio assumenda mollitia corporis quasi repellendus tempora quia. Fuga.
+            </p>
+          </div>
+            
+        </div>
+        
+        <div class="skills__pixel">
+
+          <div class="skills__pixel--icons">
+            <img src="./images/pixel.svg" alt="Pixel Icon">
+          </div>    
+
+          <div class="skills__pixel--title">
+
+            <p class="skills__pixel--paragraph">Pixel perfect</p>
+
+          </div>
+
+          <div class="skills__pixel--information">
+           <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa alias soluta laboriosam odio nihil eaque iste veniam 
+             aspernatur aperiam! Optio ullam corporis vitae explicabo odio earum nostrum quod unde quisquam?
+           </p>
+          </div>
+            
+        </div>
+        <div class="skills__interaction"> 
+
+          <div class="skills__interaction--icons">
+            <img src="./images/interaction.svg" alt="interaction Icon">
+          </div> 
+
+          <div class="skills__inteaction--title">
+            <p class="skills__interaction--title">Interação</p>
+          </div>
+
+          <div class="skills__interaction--information">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate in autem temporibus quisquam quae porro eaque, 
+              voluptatem quia sit, dicta accusantium consectetur, excepturi illum voluptatum. Porro a excepturi distinctio?
+            </p>
+          </div>
+            
+        </div>
+
+      </div>
+      
+        
+    </div>
+
     <footer class="footer flex">
       <div class="container footer__border">
         <div class="footer-content flex">

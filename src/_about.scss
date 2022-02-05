@@ -1,0 +1,76 @@
+@import '_variables', '_styles';
+
+.about {
+  padding: 93px 16px 64px 16px;
+  &-card {
+    color: white;
+    background-color: $cardColor;
+    padding: 16px;
+    border-radius: 8px;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      gap: 32px;
+      max-width: 927px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      @media (min-width: 992px) {
+        max-width: 326px;
+      }
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        font-size: 48px;
+        line-height: 57px;
+        font-weight: 500;
+        margin-bottom: 33px;
+        margin-top: 0px;
+      }
+    }
+    &-description {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-width: 100%;
+  }
+  &__responsive,
+  &__html,
+  &__cooworking,
+  &__comunication,
+  &__pixel,
+  &__interaction {
+    background-color: #1c1e22;
+    padding: 16px;
+    margin: 24px 0;
+  }
+}
+
+.skills p {
+  color: #ffffff;
+}
