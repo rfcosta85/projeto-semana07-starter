@@ -125,6 +125,10 @@
 .skills__comunication--paragraph,
 .skills__pixel--paragraph,
 .skills__interaction--paragraph {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.25px;
   @media (min-width: 992px) {
     font-size: 34px;
     font-weight: 500;
