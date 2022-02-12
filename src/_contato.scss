@@ -19,6 +19,12 @@
       letter-spacing: 0.25px;
 
       color: #ffff;
+
+      @media (min-width: 992px) {
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -0.5px;
+      }
     }
   }
 
@@ -28,6 +34,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 4.3px;
+    margin-top: -30px;
     &--text {
       font-family: 'Dm Sans';
       font-style: normal;
@@ -39,6 +46,14 @@
       letter-spacing: 0.1px;
 
       color: #ffff;
+
+      @media (min-width: 992px) {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        margin-top: -10px;
+        margin-bottom: 50px;
+      }
     }
   }
 
@@ -54,6 +69,14 @@
     margin: 24px;
 
     background-color: #26292d;
+
+    @media (min-width: 996px) {
+      justify-content: center;
+      align-items: center;
+      width: 447px;
+      height: 546px;
+      margin: auto;
+    }
 
     .label {
       font-family: 'Dm Sans';
@@ -82,6 +105,11 @@
       border-radius: 8px;
 
       margin: 8px 0;
+
+      @media (min-width: 996px) {
+        width: 399px;
+        height: 60px;
+      }
     }
 
     #message-label {
